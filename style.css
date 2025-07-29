@@ -66,6 +66,7 @@ body {
     border: solid purple 2px;
     height: 100%;
     width: 85%;
+    position: relative;
 }
 
 @media screen and (max-width:768px) {
@@ -109,11 +110,17 @@ body {
 #me {
     background-color: #b5b1aa;
     width: 408px;
+    z-index: 1;
+    
 
     border-bottom: solid black 2px;
     border-right: 2px solid black;
     border-left: solid 2px #cbd4d5;
     border-top: solid 2px #cbd4d5;
+
+    position: absolute;
+    top:20px;
+    left: 20px;
 }
 
 @media screen and (max-width:768px) {
@@ -137,6 +144,7 @@ body {
     margin: 2px;
     background-image: linear-gradient(to right, #2b495e, #4f7a99);
     width: 400px;
+    cursor:grab;
 }
 
 .left-bar{
@@ -181,15 +189,12 @@ body {
     margin: 4px;
     padding-bottom: 2px;
     padding-top: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
 
     font-weight: 800;
-    border-radius: 0%;
 
-    
-    border-bottom: solid black 2px;
-    border-right: 2px solid black;
-    border-left: solid 2px #cbd4d5;
-    border-top: solid 2px #cbd4d5;
+    cursor: pointer;
 }
 
 @media screen and (max-width:768px) {
@@ -221,7 +226,10 @@ body {
 
 #my-photo{
     width: 400px;
-    box-shadow: inset 2px black;
+    border-top: solid black 2px;
+    border-left: 2px solid black;
+    border-right: solid 2px #cbd4d5;
+    border-bottom: solid 2px #cbd4d5;
 }
 
 @media screen and (max-width:768px) {
@@ -239,4 +247,99 @@ body {
     }
 
     
+}
+
+@media screen and (min-width: 769px) {
+    .icon img{
+        width: 50px;
+    }
+}
+
+
+#contact-me-window {
+    position: absolute;
+
+    background-color: #b5b1aa;
+
+    border-bottom: solid black 2px;
+    border-right: 2px solid black;
+    border-left: solid 2px #cbd4d5;
+    border-top: solid 2px #cbd4d5;
+
+    position: absolute;
+    top:90px;
+    left: 360px;
+}
+
+#about-me-bar{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px;
+    background-image: linear-gradient(to right, #2b495e, #4f7a99);
+    width: 400px;
+    cursor:grab;
+}
+
+#about-me-info{
+    margin: 2px;
+}
+
+#about-me-text{
+    background-color: #f2f3fd;
+    padding: 2px;
+    overflow: auto;
+    width: 400px;
+    height: 500px;
+
+    border-top: solid black 2px;
+    border-left: 2px solid black;
+    border-right: solid 2px #cbd4d5;
+    border-bottom: solid 2px #cbd4d5;
+
+}
+
+#about-me-menu{
+    margin: 4px;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+::-webkit-scrollbar-button{
+    border-radius: 0%;
+    background-color: #b5b1aa;
+    border-bottom: solid black 2px;
+    border-right: 2px solid black;
+    border-left: solid 2px #cbd4d5;
+    border-top: solid 2px #cbd4d5;
+
+}
+
+::-webkit-scrollbar-track-piece  {
+    background-color: #d8d3cb;
+
+    border-top: solid black 1px;
+    border-left: 1px solid black;
+    border-right: solid 2px #cbd4d5;
+    border-bottom: solid 2px #cbd4d5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0%;
+    background-color: #b5b1aa;
+    border-bottom: solid black 2px;
+    border-right: 2px solid black;
+    border-left: solid 2px #cbd4d5;
+    border-top: solid 2px #cbd4d5;
+}
+
+::-webkit-resizer {
+    background-color: #d8d3cb;
+
+    border-top: solid black 1px;
+    border-left: 1px solid black;
+    border-right: solid 2px #cbd4d5;
+    border-bottom: solid 2px #cbd4d5;
 }
