@@ -206,23 +206,17 @@ body {
 
 
 #paint-main{
-    border: solid red 2px;
     display: flex;
 }
 
-#paint-options{
-    border: salmon solid 2px;
-}
+
 
 .painting-option{
     height: 10px;
     width: 10px;
     background-color: #2b495e;
 }
-#image{
 
-    border: pink solid 2px;
-}
 
 #my-photo{
     width: 400px;
