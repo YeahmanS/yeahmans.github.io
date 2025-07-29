@@ -24,7 +24,6 @@ body {
 }
 
 #icons{
-    border: solid pink 2px;
     height: 100%;
     width: 15%;
     display: grid;
@@ -63,7 +62,6 @@ body {
 }
 
 #drag-area{
-    border: solid purple 2px;
     height: 100%;
     width: 85%;
     position: relative;
