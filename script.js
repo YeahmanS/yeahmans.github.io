@@ -107,7 +107,8 @@ document.addEventListener('mousemove',(event) => {
 })
 
 document.addEventListener('mouseup',()=>{
-  window_move.dom.style.cursor = "default" 
+  if (window_move.dom != null){
+  window_move.dom.style.cursor = "default";}
   window_move.dom=null
 
 })
