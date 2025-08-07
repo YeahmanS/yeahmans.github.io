@@ -12,7 +12,7 @@
 <body>
     <div id="background-wallpaper">
         <div id="icons">
-            <div class="icon projects">
+            <div class="icon projects" id="project-icon">
                 <img src="static/projects.png" alt="">
                 <span class="icon-text">Projects</span>
             </div>
@@ -24,22 +24,29 @@
                 <img src="static/resume.png" alt="">
                 <span class="icon-text">Resume</span>
             </div>
+            
             <div class="icon github">
                 <img src="static/icons8-github-32.png" alt="">
+                
+                <a href="https://github.com/YeahmanS" style="text-decoration: none;">
                 <span class="icon-text">Github</span>
+                </a>
             </div>
+            
             <div class="icon linkedin">
                 <img src="static/icons8-linkedin-32.png" alt="">
-                <span class="icon-text">LinkedIn</span>
+                <a href="https://github.com/YeahmanS" style="text-decoration: none;"><span class="icon-text">LinkedIn</span></a>
             </div>
             <div class="icon contact-me" id="about-me-icon">
                 <img src="static/contact-me.png" alt="">
                 <span class="icon-text">About Me</span>
             </div>
+
             <div class="icon twitter">
                 <img src="static/icons8-twitter-50.png" width="36px" alt="">
-                <span class="icon-text">Twitter</span>
+                <a href="https://github.com/YeahmanS" style="text-decoration: none;"><span class="icon-text">Twitter</span></a>
             </div>
+            
             <div class="icon blogs">
                 <img src="static/blogs.png" width="36px" alt="">
                 <span class="icon-text">blogs</span>
@@ -53,7 +60,14 @@
                 <span class="icon-text">Minesweeper</span>
             </div>
             
-            
+        <div id="start-menu">
+            <div class="start-menu-card"><img src="static/me.png" width="18px" alt=""><span>Me !!!</span></div>
+            <div class="start-menu-card"><img src="static/contact-me.png" width="18px" alt=""><span>About Me</span></div>
+            <div class="start-menu-card"><img src="static/projects.png" width="18px" alt=""><span>Projects</span></div>
+            <div class="start-menu-card"><img src="static/minesweeper.png" width="18px" alt=""><span>Mines</span></div>
+            <div class="start-menu-card"><img src="static/icons8-twitter-50.png" width="18px"><span>Twitter</span></div>
+
+        </div>
             
         </div>
         <div id="drag-area">
@@ -100,12 +114,44 @@
                         <span class="paint-menu-text">Help</span>
                     </div>
                     <div id="about-me-text">
-                        Hello
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, impedit possimus. Error vitae sunt asperiores laborum facilis, labore ab reiciendis, explicabo corporis quis doloribus repellat eum totam non, nobis cupiditate.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium recusandae id veritatis magni vel nesciunt necessitatibus. Beatae aperiam incidunt nisi quis quia soluta? Delectus aut placeat quis adipisci laboriosam doloribus?
+                        Hello it's me Yaman 
+
+
                     </div>
                 </div>
             </div>
+            
+            <div id="project-window">
+                <div id="project-bar">
+                    <div id="project-left-bar">
+                        <img src="static/projects.png" width="18px">
+                        <span class="name-bar">Projects</span>
+                    </div>
+                    <div class="project-right-bar">
+                        <div class="close-button not-pressed" id="close-button-projects">x</div>
+                    </div>
+                </div>
+                <div id="project-main">
+                    <div id="project-1" class="project">
+
+                        <div class="project-title">Project 1</div>
+                        <div class="project-description">This is a description of project 1. It does amazing things!</div>
+                    </div>
+                    <div id="project-2" class="project">
+                        
+                        <div class="project-title">Project 2</div>
+                        <div class="project-description">This is a description of project 1. It does amazing things!</div>
+                    </div>
+                    <div id="project-2" class="project">
+                        
+                        <div class="project-title">Project 3</div>
+                        <div class="project-description">This is a description of project 1. It does amazing things!</div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
             
         </div>
     </div>
