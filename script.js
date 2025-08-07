@@ -1,21 +1,25 @@
   const startButton = document.getElementById('start-button');
   const startMenu = document.getElementById('start-menu');
+  const cardMenuTwitter = document.getElementById('card-menu-twitter');
   let globalZ = 1;
 
   const me = document.getElementById("me");
   const meIcon = document.getElementById("me-icon");
   const closeButtonMe = document.getElementById('close-button-me');
   const draggablebar = document.getElementsByClassName('draggable-bar');
+  const cardMenuMe= document.getElementById('card-menu-me');
   
   const aboutMe = document.getElementById('contact-me-window');
   const closeButtonAboutMe = document.getElementById('close-button-about-me');
   const aboutMeIcon = document.getElementById('about-me-icon') 
   const aboutMeBar = document.getElementById('about-me-bar');
+  const cardMenuAboutMe = document.getElementById('card-menu-about-me');
 
   const projectwindow = document.getElementById('project-window');
   const closeButtonProject = document.getElementById('close-button-projects');
   const projectIcon = document.getElementById('project-icon');
   const projectBar = document.getElementById('project-bar');
+  const cardMenuProject = document.getElementById('card-menu-projects');
 
   let cursor ={
     x:null,
@@ -156,3 +160,34 @@ projectwindow.addEventListener('click',()=>{
   projectwindow.style.zIndex = globalZ;
 })
 
+
+cardMenuMe.addEventListener('click',()=>{
+  if (me.style.zIndex < 0) {
+    globalZ += 1;
+    me.style.zIndex = globalZ ;
+  } else {
+    me.style.zIndex = -1;
+  }
+})
+
+cardMenuAboutMe.addEventListener('click',()=>{
+  if (aboutMe.style.zIndex < 0) {
+    globalZ += 1;
+    aboutMe.style.zIndex = globalZ ;
+  } else {
+    aboutMe.style.zIndex = -2;
+  }
+})
+
+cardMenuProject.addEventListener('click',()=>{
+  if (projectwindow.style.zIndex < 0) {
+    globalZ += 1;
+    projectwindow.style.zIndex = globalZ ;
+  } else {
+    projectwindow.style.zIndex = -3;
+  }
+})
+
+cardMenuTwitter.addEventListener('click',()=>{
+  window.open('https://twitter.com/yeahmansingh', '_blank');
+})

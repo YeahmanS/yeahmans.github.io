@@ -414,6 +414,12 @@ body {
 
 }
 
+@media screen and (max-width:768px) {
+    #start-menu {
+        width: 25%;
+    }
+}
+
 .start-menu-card{
     display: flex;
     justify-content: start;
