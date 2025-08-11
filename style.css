@@ -3,8 +3,13 @@
 }
 
 @font-face {
+  font-family: digit;
+  src: url(assests/DS-DIGIB.TTF);
+}
+
+@font-face {
     font-family: Classic;
-    src: url("/static/C&C\ Red\ Alert\ [LAN].ttf");
+    src: url(assests/Classic.TTF);
 }
 
 body {
@@ -260,6 +265,7 @@ body {
     position: absolute;
     top:90px;
     left: 360px;
+    z-index: 2;
 }
 
 #about-me-bar{
@@ -435,6 +441,152 @@ body {
     border: dotted 1px #f2f3fd;
     color: #f2f3fd;
 }
+
+
+#minesweeper-window{
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    background-color: #b5b1aa;
+
+    border-bottom: solid black 2px;
+    border-right: 2px solid black; 
+    border-left: solid 2px #cbd4d5;
+    border-top: solid 2px #cbd4d5;
+    box-sizing: content-box;
+    gap: 2px;
+    width: 184px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+
+    z-index: -1;
+
+}
+
+#minesweeper-bar{
+    width: 182px;
+    height: 26px;
+    background-image: linear-gradient(to right, #2b495e, #4f7a99);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    /* padding-right: 2px; */
+    font-family: Classic;
+}
+
+#mine-left-bar{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 2px;
+}
+
+#mine-right-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#close-button-minesweeper{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-weight: 800;
+    width: 16px;
+    height: 16px;
+}
+
+#game-bar{
+    width: 170px;
+    height: 20px;
+    margin-left: 10px;
+    background-color: #b5b1aa;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    font-family: Classic;
+}
+
+#Help{
+    text-decoration: none;
+    font-weight: 500;
+    color: black
+}
+
+#game-board{
+    box-sizing: border-box;
+    width: 180px;
+    border-bottom: solid #797979 4px;
+    border-right: 4px solid #797979;
+    border-left: solid 4px #cbd4d5;
+    border-top: solid 4px #cbd4d5;
+    padding:8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center ;
+}
+
+#score-board{
+    width: 154px;
+    background-color: #b5b1aa;
+    border-bottom: solid #cbd4d5 3px;
+    border-right: 3px solid #cbd4d5;
+    border-left: solid 3px #797979;
+    border-top: solid 3px #797979;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#game-state{
+    height: 32px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b5b1aa;
+}
+
+#flag-count,#time{
+    font-family: digit;
+    font-size: 30px;
+    color: red;
+    background-color: black;
+    border-bottom: solid #fffef7 3px;
+    border-right: 3px solid #fffef7;
+    border-left: solid 3px #797979;
+    border-top: solid 3px #797979;
+
+}
+
+#board{
+    display: grid;
+    box-sizing: content-box;
+    grid-template-columns: repeat(9,16px);
+    grid-template-rows: repeat(9,16px);
+    width: 144px;
+    height: 144px;
+    margin-top: 4px;
+    background-color: grey;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid #cbd4d5;
+    border-bottom: 4px solid #cbd4d5;
+}
+
+
+#Help:hover{
+    text-decoration: underline;
+}
+
+
 
 ::-webkit-scrollbar {
     width: 16px;

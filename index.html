@@ -55,7 +55,7 @@
                 <img src="static/recyclebin.png" alt="">
                 <span class="icon-text">Trash ideas</span>
             </div>
-            <div class="icon minesweeper">
+            <div class="icon minesweeper" id="mine-icon">
                 <img src="static/minesweeper.png" alt="">
                 <span class="icon-text">Minesweeper</span>
             </div>
@@ -90,7 +90,7 @@
                         <span class="paint-menu-text">Help</span>
                     </div>
                     <div >
-                        <img src="static/clark.jpg" id="my-photo">
+                        <img src="static/yaman_informal.jpg" id="my-photo">
                     </div>
 
                 </div>
@@ -150,6 +150,33 @@
                     
                 </div>
 
+            </div>
+            <div id="minesweeper-window">
+                <div id="minesweeper-bar">
+                    <div id="mine-left-bar">
+                        <img src="static/minesweeper.png" width="18px" height="18px">
+                        <span class="name-bar">Minesweeper</span>
+                    </div>
+                    <div id="mine-right-bar">
+                        <div class="close-button not-pressed" id="close-button-minesweeper">x</div>
+                    </div>
+                </div>
+                <div id="game-bar">
+                    <span>Game</span>
+                    <a href="https://minesweepergame.com/strategy/how-to-play-minesweeper.php" target="_blank" id="Help" >Help</a>
+                </div>
+                <div id="game-board">
+                    <div id="score-board">
+                        <div id="flag-count">010</div>                
+                        <button class="not-pressed" id="game-state" >
+                            <img width="20" height="20" src="assests/running.png" alt="happy"/>
+                        </button>
+                        <div id="time">000</div>
+                    </div>
+                    <div id="board">
+                        <!-- Game board will be generated here -->
+                    </div>
+                </div>
             </div>
 
             
