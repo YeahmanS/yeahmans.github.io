@@ -117,6 +117,7 @@ mineIcon.addEventListener('click',()=>{
   closeButtonMine.classList.add("not-pressed")
   globalZ +=1 ;
   mineWindow.style.zIndex = globalZ ;
+  clearInterval(timer);
   resetGame()
 })
 
